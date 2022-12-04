@@ -1,0 +1,185 @@
+body{
+  /* Set overflow to auto in order to add a scroll-bar  in case the window is reduced,  */
+  overflow-x: auto;
+  overflow-y: auto;
+  /* Set font family for text in body */
+  font-family: Palatino, Helvetica,Arial,Sans-Serif;
+}
+
+h1, h3 {
+  /* Set font family for heading */
+  font-family: 'Arial', sans-serif;
+  /* Set font weight for heading */
+  font-weight: 700;
+}
+
+/* Set style for navigation bar */
+ul.navigation {
+  /* Set list type to none */
+  list-style-type: none;
+  /* No margin */
+  margin: 0;
+  /* No padding */
+  padding: 0;
+  /* Set overflow to auto in case the window is reduced,  */
+  overflow-x: auto;
+  overflow-y: auto;
+  /* Set color for navigation bar */
+  background: #51A0DD;
+  /* Set width and height */
+  width: 100%;
+  height: 61px;
+}
+
+/* Set second level floats to the right of the bar */
+.navigation li {
+  float: right;
+}
+
+/* Set the style for anchor */
+.navigation li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  /* Set no underline for text anchor */
+  text-decoration: none;
+}
+
+/* Set color for navigation bar when user hovers */
+.navigation li a:hover {
+  background-color: #8D40A1;
+  /*COLOR*/
+}
+
+/* Set style for the second level list in in side bar */
+.sidebar-nav >.sidebar-title {
+  color: #dddddd;
+  text-transform: uppercase;
+  margin-bottom: -10px;
+  font-size: 14px;
+}
+
+/* Style for text of sidebar-brand at the top */
+.sidebar-nav > .sidebar-brand a,
+.sidebar-nav > .sidebar-brand a:active,
+.sidebar-nav > .sidebar-brand a:hover,
+.sidebar-nav > .sidebar-brand a:visited
+ {
+  /*Set background as darker purple to make it differnt*/
+  background: #783993;
+  color: white;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  border: 0px solid black;
+
+}
+
+/* style for second level list when user mouses over */
+.sidebar-nav li a:hover {
+  border-left: 4px solid  #002A6E;
+}
+
+/* Style for contents of activities */
+div.activities{
+/* Set the style for the border  */
+  border: 2px solid;
+/* Set the distance between content and border   */
+  padding: 2em;
+/* Set the width for border as auto */
+  width: auto;
+/* Set the distance between boxes */
+  margin: 20px;
+/*Set content to flex wrap to make it fit whenever user zoom in or out*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Style for text of the content in activities */
+.activities p{
+  text-align: center;
+}
+
+/* Style for sidebar-wrapper */
+#sidebar-wrapper {
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow: auto;
+  /* Color violet purple */
+  background: #8D40A1;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Set the line height and text-indent in sidebar */
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 50px;
+}
+
+/* Make up the text in sidebar */
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+/* Style for text in sidebar when it is selected or moused over */
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+/* Set the font size, height as well as line height for second level list in sidebar */
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+div.profile img{
+  padding-top: 20px
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Style for content when the page is at 480px or smaller */
+  #wrapper {
+    /* padding-left: 250px; */
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  #sidebar-wrapper {
+    width: 250px;
+  }

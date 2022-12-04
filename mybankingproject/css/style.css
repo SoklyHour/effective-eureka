@@ -1,0 +1,309 @@
+/* style for border and margin of whole page content */
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+
+}
+
+/* style for text of the page  */
+body
+{
+ font-family: Palatino, Helvetica,Arial,Sans-Serif;
+ background-image: url(../img/background.jpg);
+ background-size:cover;
+}
+
+/* style for logo at the top left */
+.logo {
+    height: 200px;
+    width: auto;
+    position: relative;
+    margin-left: 45%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: .5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+
+
+/* style for form */
+.form {
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  width: 40%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+
+}
+
+/* style for form when user mouses over */
+.form:hover {
+	box-shadow: 0px 0px 40px 16px rgba(18,18,18,1.00);
+	}
+
+/* Style for buttons/list at the top of the form */
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  background-color: #8A2908;
+}
+
+/* Set the space between both buttons/list and next element */
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style for buttons */
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #B43104;
+  box-shadow:0px 3px 0px 0px #8A2908;
+  color: #fff;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+/* style for anchor buttons when user mouses over */
+.tab-group li a:hover {
+  background-color: #8A2908;
+  color: #ffffff;
+}
+
+/* style for anchor when it is not moused over */
+.tab-group:active a {
+  background-color: #8A2908;
+  color: #ffffff;
+}
+
+/* style for display behaviour of form */
+.tab-content > div:last-child {
+  display: none;
+}
+
+/* style for heading text */
+h1 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+/* style for label */
+label {
+  position: relative;
+  transform: translateY(6px);
+  left: 13px;
+  color: black;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-size: 22px;
+}
+/* style for lebel requirement class */
+label .req {
+  margin: 2px;
+  color: red;
+}
+
+
+/* Make up for blank input */
+input {
+  background: none;
+  background-image: none;
+  color: black;
+  transition: 0.2s ease;
+  width: 100%;
+  height: auto;
+  padding: 12px 20px;
+  position: relative;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  align-items: baseline;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+
+/* Style for fieldwrap */
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* Style for the element after top row */
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style for the div inside top-row */
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+/* Set the margin for the last child inside the top-row  */
+.top-row > div:last-child {
+  margin: 0;
+}
+
+/* Style for button  */
+.button {
+width:200px;
+height:45px;
+font-size:16px;
+font-weight:bold;
+background-color:#B43104;
+color:white;
+border:none;
+box-shadow:0px 3px 0px 0px #8A2908;
+border-radius:3px;
+cursor: pointer;
+align-items: flex-start;
+margin-bottom: 3%;
+}
+
+/* Style for button when user mouses over */
+.button:hover, .button:focus {
+  background-color: #8A2908;
+}
+
+/* Style for button at the very bottom */
+.button-block {
+  display: block;
+  width: 100%;
+  top: 20px;
+
+}
+
+/* Style for the anchor pf the button get started and log in */
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Style for forgot text in sign in page */
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+  margin-bottom:10px;
+  color: red;
+}
+
+/* style for line terms of use */
+.termsOfUse{
+ text-align: center;
+}
+
+.termsOfUse a{
+  color: black;
+}
+/* Style for heading h4 */
+div h4{
+  color: black;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Style for heading h3 */
+div h3{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 40px;
+}
+
+/* Style for social buttons at the bottom */
+button.social
+{
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 30%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.facebook
+{
+    background: #32508e;
+}
+.twitter
+{
+    background: #55acee;
+}
+.google
+{
+    background: #dd4b39;
+}
+
+/* Set responsive to smaller media screen 900px */
+@media screen and (max-width: 900px) {
+  /* Place the timelime to the left */
+  /* style for logo at the top left */
+  .logo {
+      height: 200px;
+      width: auto;
+      position: relative;
+      margin-left: 40%;
+  }
+
+  /* style for form */
+  .form {
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+
+  }
+
+  button.social
+  {
+      margin-left: 0 auto;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      width: 30%;
+      height: 36px;
+      border: none;
+      border-radius: 2px;
+      color: #fff;
+      font-family: sans-serif;
+      font-weight: 500;
+      transition: 0.2s ease;
+      cursor: pointer;
+      display: inline-block;
+
+  }

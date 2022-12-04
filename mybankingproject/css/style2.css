@@ -1,0 +1,120 @@
+h3 {
+  /* Set font family for heading */
+  font-family: 'Arial', sans-serif;
+  /* Set font weight for heading */
+  font-weight: 700;
+}
+
+
+/* Set style for navigation bar */
+ul.navigation {
+  /* Set list type to none */
+  list-style-type: none;
+  /* No margin */
+  margin: 0;
+  /* No padding */
+  padding: 0 ;
+  /* Set transparency for navigation bar */
+  opacity: 1;
+  filter: alpha(opacity=30);
+  /* Set width and height */
+  width: 100%;
+  height: 57px;
+
+  overflow: hidden;
+}
+
+/* Set style for logo  */
+.logoimage{
+
+  position: relative;
+  left:2%;
+  top: 0;
+  max-height: 100px;
+  width: auto;
+  }
+
+
+
+/* Set second level floats to the right of the bar */
+.navigation li {
+  display: inline-inline-block;
+  float: right;
+}
+
+/* Set the style for anchor */
+.navigation li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  /* Set no underline for text anchor */
+  text-decoration: none;
+
+
+}
+
+/* Set color for navigation bar when user hovers */
+.navigation li a:hover{
+  background-color: #8D40A1;
+
+  /*COLOR*/
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+/* Style for contents of activities */
+div.activities{
+/* Set the style for the border  */
+  border: 2px solid;
+/* Set the distance between content and border   */
+  padding: 2em;
+/* Set the width for border as auto */
+  width: auto;
+/* Set the distance between boxes */
+  margin: 20px;
+/*Set content to flex wrap to make it fit whenever user zoom in or out*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Style for text of the content in activities */
+.activities p{
+  text-align: center;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+/* Style for content when the page is at 480px or smaller */
+  #wrapper {
+    /* padding-left: 250px; */
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  #sidebar-wrapper {
+    width: 250px;
+  }

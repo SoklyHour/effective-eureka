@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>
+      AUPP Wire Transfer
+    </title>
+
+		<link rel="stylesheet" href="css/stylehomepage.css"/>
+		<link  rel="stylesheet" href="css/style2.css"/>
+
+
+	</head>
+
+<body>
+	<!-- Top Navigation -->
+<div id="wrapper" class="wrapper">
+		<ul class="navigation">
+
+		  <div class="main">
+		    <!-- Add clickable logo - go back to homepage -->
+		    <a href="home.html" title="logo"> </a>
+				<!-- <img class ="logoimage" src="atc.png" alt ="logoATCTransfer"></a> -->
+		    <li><a href="signup.html" class="active">Log in/Sign up</a></li>
+		    <li><a href="about.html">About</a></li>
+		    <li><a href="contact.html">Contact</a></li>
+		    <li><a href="sendmoney.html">Send money</a></li>
+		    <li><a href="home.html">Home</a></li>
+
+		  </div>
+		</ul>
+
+
+
+	<div class="container">
+
+	  <div class="parent">
+			<div class ="child">
+	      <form id="checking" action ="signup.html">
+
+						<p><label for="amount"><span>Enter the amount you want to send below:</span></label>
+								<input type="text" id="amount" placeholder="Amount" name="Amount" oninput="calculation(this.value)" onchange="calculation(this.value)"></p>
+
+						<label for="from"><span>From currency:</span></label><select id="select1" >
+								<option value="pound">&pound; Pound</option>
+								<option value="cad">CAD Canadian Dollar</option>
+								<option value="eur">&euro; Euro</option>
+						</select>
+
+
+						<label for="to"><span>To currency:</span></label>
+						<select id="select2">
+
+							<option value="pound">&pound; Pound</option>
+							<option value="cad">CAD Canadian Dollar</option>
+							<option value="eur">&euro; Euro</option>
+						</select>
+
+					<br>
+					Recipient will recieve:</em><div id="result"></div>
+					<br>
+
+						<!-- button to redirect to login page -->
+	  				<button onClick="window.location='signup.html';" value="Login">Login to Send NOW </button>
+					</form>
+				</div>
+
+
+
+
+
+	    <div class ="child">
+	        <h1>AUPP Wire Transfer, A Real AUPP Banking Application</h1>
+
+	        <p>Find your own currency match, send and receive money in less than 5 seconds</p>
+	          <ul>
+	            <li>Zero Fee</li>
+	            <li>Safe and Secure</li>
+	            <li>Thw fastest money transfer in Cambodia</li>
+	            <li>The most convinient way to transfer money in the world</li>
+	            <li>Gurantee and responsible for your money transfer</li>
+	          </ul>
+	      </div>
+			</div>
+	</div>
+
+<footer>
+    <p>AUPP Technology Center is registered as a money service business with the Financial Transactions and Reports Analysis Centre of Cambodia. Please really care for our customer safety and make sure the costumer satisfy our banking application</p>
+    <p><small>©AUPP Technology Center. All rights reserved</small></p>
+  </footer>
+</div>
+<!-- add Javascript to show the demo of currency converter - real exchange rate once connected with php -->
+	<script>
+
+function calculation() {
+    var amount = document.getElementById('amount').value;
+    var currency1 = document.getElementById('select1').value;
+    var currency2 = document.getElementById('select2').value;
+
+    switch (currency1 + ' ' + currency2) {
+        case "pound pound": //for the case convert from pound to pound
+            var y = amount * 1;
+            document.getElementById('result').innerHTML = "&pound; " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+            break
+        case "pound cad": //for the case convert from pound to cad
+            var x = currency2 = 1.68;
+            var y = amount * x;
+            document.getElementById('result').innerHTML = "CAD$ " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+            break
+        case "cad cad": //for the case convert from cad to cad
+            var y = amount * 1;
+            document.getElementById('result').innerHTML = "CAD$ " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+            break
+				case "cad pound": //for the case convert cad to pound
+             var x = currency2 = 1.68;
+             var y = amount / x;
+             document.getElementById('result').innerHTML = "&pound; " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+						 break
+
+						case "eur eur": //for the case convert eur to eur
+		            var y = amount * 1;
+		            document.getElementById('result').innerHTML = "&euro; " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+		            break
+
+		        case "pound eur": //for the case convert pound to eur
+		            var x = currency2 = 1.11;
+		            var y = amount * x;
+		            document.getElementById('result').innerHTML = "&euro; " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+		            break
+
+		        case "eur pound":
+								var x = currency2 = 1.11;
+								var y = amount / x;
+								document.getElementById('result').innerHTML = "&pound; " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+								break
+
+
+						case "cad eur":
+								var x = currency2 = 1.51;
+								var y = amount * x;
+								document.getElementById('result').innerHTML = "&euro; " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+								break
+
+				    case "eur cad":
+								var x = currency2 = 1.51;
+							 	var y = amount / x;
+							 	document.getElementById('result').innerHTML = "CAD$; " + parseFloat(Math.round(y * 100) / 100).toFixed(2);
+							 	break
+
+    }
+}
+</script>
+
+  </body>
+  </html>

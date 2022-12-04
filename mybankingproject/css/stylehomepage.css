@@ -1,0 +1,198 @@
+body
+{
+ font-family: Palatino, Helvetica,Arial,Sans-Serif;
+ background-image: url("../img/background.jpg");
+
+}
+
+/* Container contain flex box  */
+.container {
+  /* background-color: lightyellow; */
+  padding: 20px;
+  margin: 0 auto;
+  padding: 2.5%;
+}
+
+/* Styling parent contain flex box */
+.parent {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  height: 600px;
+  align-items: baseline;
+  align content: center;
+  padding: 20px;
+
+}
+
+/* Styling both flexbox */
+.child {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 20px;
+  width: 50%;
+
+}
+
+/* Set first <div> in second order */
+.child:nth-of-type(1) {
+  order:2;
+  width:50%;
+
+}
+
+/* Set second <div> in first order */
+.child:nth-of-type(2) {
+  order:1;
+}
+
+
+/* Styling login button */
+button
+{
+ width:200px;
+ height:45px;
+ font-size:16px;
+ font-weight:bold;
+ background-color:#B43104;
+ color:white;
+ border:none;
+ box-shadow:0px 3px 0px 0px #8A2908;
+ border-radius:3px;
+ cursor: pointer;
+ align-items: flex-start;
+}
+
+/* Styling login button when hover */
+button:hover {
+  background-color: #8A2908;
+
+}
+
+/* Styling form */
+form {
+margin: 0 auto;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 40px;
+width: 50%;
+margin-top: 10%;
+margin-bottom: 10%;
+
+
+}
+
+/* Styling input text type, input email type, select dropdown and textarea */
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  height: auto;
+  padding: 12px 20px;
+  position: relative;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  align-items: baseline;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+/* Styling input text type, input email type*/
+input[type=text], input[type=email], focus {
+border: 3px solid #555;
+}
+
+/* style for form when user mouses over */
+form:hover {
+	box-shadow: 0px 0px 40px 16px rgba(18,18,18,1.00);
+	}
+
+/* Set style for footer */
+footer{
+    background-color: #51A0DD;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #Contact {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    padding: 0 auto;
+  }
+
+  /* style for logo at the top left for pages without nav */
+  .logo {
+    height: 200px;
+    width: auto;
+    position: relative;
+    margin-left: 45%;
+}
+
+/* Set responsive to smaller media screen 900px */
+@media screen and (max-width: 900px) {
+  /* Place the timelime to the left */
+
+
+  .child:nth-of-type(1) {
+    order:1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  .child:nth-of-type(2) {
+    order:2;
+
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    overflow: hidden;
+    align-items: baseline;
+    align content: center;
+    padding: 20px;
+
+  }
+
+  /* style for logo at the top left for pages without nav */
+  .logo {
+    height: 200px;
+    width: auto;
+    position: relative;
+    margin-left: 40%;
+}
+
+/* style for label */
+label {
+  position: relative;
+  transform: translateY(6px);
+  left: 13px;
+  color: black;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  font-size: 22px;
+}
+
+/* style for lebel requirement class */
+label .req {
+  margin: 2px;
+  color: red;
+}
+
+/* Style for content when the page is at 480px or smaller */
+  #wrapper {
+    /* padding-left: 250px; */
+    overflow-x: auto;
+    overflow-y: auto;
+  }

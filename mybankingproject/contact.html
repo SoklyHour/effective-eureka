@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact us | AUPP Technology Center</title>
+  <link rel="stylesheet" href="css/style2.css" media="screen">
+  <link rel="stylesheet" href="css/stylehomepage.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div id="wrapper" class="wrapper">
+  
+  <!-- Top Navigation -->
+  <ul class="navigation">
+
+    <div class="main">
+      <!-- Add clickable logo - go back to homepage -->
+      <a href="home.html" title="logo"><img class ="logoimage" src="img/Sen_Order_Logo.svg" alt ="logoSenTransfer"></a>
+      <li><a href="signup.html" class="active">Log in/Sign up</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="sendmoney.html">Send money</a></li>
+      <li><a href="home.html">Home</a></li>
+
+    </div>
+  </ul>
+
+<!-- Contact form -->
+
+<div class="child">
+  <form action="action_page.php">
+
+    <label for="fname"><span>First Name</span><span class="req">*</span></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+
+    <label for="lname"><span>Last Name</span><span class="req">*</span></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="reason">Reason of contact</label>
+    <select id="reason" name="reason">
+      <option value="r1">Money has not arrived?</option>
+      <option value="r2">Tracking</option>
+      <option value="r3">How to send money?</option>
+    </select>
+
+    <label for="subject"><span>Subject</span><span class="req">*</span></label>
+    <textarea id="subject" name="subject" placeholder="Write something.." rows ="10" cols"100"></textarea>
+    <br>
+    <input type="button" value="SubmitForm">
+
+    </form>
+  </div>
+<!-- Contact information -->
+
+<div id="Contact" >
+    <h3>Have a question</h3>
+    <p>We’re here to help 24/7.</p>
+    <p>Contact us through our phone number: (+855) 99 610 940</p>
+  </div>
+</div>
+
+
+<!-- Copyright and regulation information -->
+<footer>
+    <p>AUPP Technology Center is registered as a money service business with the Financial Transactions and Reports Analysis Centre of Cambodia. Please really care for our customer safety and make sure the costumer satisfy our banking application</p>
+    <p><small>©AUPP Technology Center. All rights reserved</small></p>
+</footer>
+
+<!-- Button to go to the top page -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script src="BackToTop.js"></script>
+</body>
+</html>
