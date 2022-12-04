@@ -1,6 +1,5 @@
-# Sen-Transfer-Website-Demo
+# AUPP Banking App
 
-Static HTML Money-transfering demo website
 
 The project was built on HTML, CSS and some basic Javascripts
 
